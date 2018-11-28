@@ -1,0 +1,15 @@
+{
+  "name": "techskillspro",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Yacine BOU GHALEM",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {}
+}
