@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,24 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Technoskills Pro</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> OUR Services</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> OUR PACKS</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <header class="header">
         <div class="header__logo-box">
@@ -24,7 +42,7 @@
                     <span class="heading-primary--sub">Our process is clear, simple and effective</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Our portfolio</a>
+                <a href="#section-packs" class="btn btn--white btn--animated">Our portfolio</a>
         </div>
     </header>
 
@@ -189,7 +207,7 @@
             </div>
         </section>
 
-        <section class="section-packs">
+        <section class="section-packs" id="section-packs">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     OUR PACKS
@@ -226,7 +244,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$200</p>
                                 </div>
-                                <a href="#" class="btn btn--white"> Book now!</a>
+                                <a href="#popup" class="btn btn--white"> Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -261,7 +279,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$200</p>
                                 </div>
-                                <a href="#" class="btn btn--white"> Book now!</a>
+                                <a href="#popup" class="btn btn--white"> Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +314,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$200</p>
                                 </div>
-                                <a href="#" class="btn btn--white"> Book now!</a>
+                                <a href="#popup" class="btn btn--white"> Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -413,6 +431,58 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="LOGO" class="footer__logo">
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Services</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">packs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built my <a href="" class="footer__link"> TechnoSkillsPro</a>. Copyright 2018 &copy; by Yacine BOUGHALEM.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque aut, cumque inventore amet ullam repellendus non deserunt nostrum! Ut, est sed. Dolore unde ipsa totam natus sunt recusandae eius.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img class="popup__img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=500&q=60" alt="">
+                <img class="popup__img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=581511fae3d6e46d55eb0b6f3d86b69d&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section__packs" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Start Booking Now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla dolor, voluptatibus quaerat sequi totam vitae quam amet? Quo quas dolorum sed voluptatibus nemo, dolores ab velit sit? Distinctio, optio?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla dolor, voluptatibus quaerat sequi totam vitae quam amet? Quo quas dolorum sed voluptatibus nemo, dolores ab velit sit? Distinctio, optio?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla dolor, voluptatibus quaerat sequi totam vitae quam amet? Quo quas dolorum sed voluptatibus nemo, dolores ab velit sit? Distinctio, optio?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla dolor, voluptatibus quaerat sequi totam vitae quam 
+                </p>
+
+                <a href="#" class="btn btn--green">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
