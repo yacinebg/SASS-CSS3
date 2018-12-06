@@ -2,10 +2,14 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 25rem 0;
     background-image: linear-gradient(
                         to right bottom ,
                         rgba(126, 213, 111, 0.8),
@@ -21,24 +25,40 @@
     & > * {
         transform: skewY(7deg);
     }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-packs {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section-stories {
     position: relative;
-    padding: 5rem 0;
+    padding: 15rem 0;
     // background-color: $color-grey-light-1;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
@@ -50,11 +70,37 @@
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5 4rem rgba($color-black, .2);
-    height: 50rem;
+    //height: 50rem;
+
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg ,
+                                            rgba($color-white,.9) 0%, 
+                                            rgba($color-white,.9) 65%, 
+                                            transparent 65%), 
+                                            url("https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9943985ab543c6dc5300988f49545e73&auto=format&fit=crop&w=1650&q=80");
+        background-size: cover;
+
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right ,
+                                            rgba($color-white,.9) 0%, 
+                                            rgba($color-white,.9) 100%), 
+                                            url("https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9943985ab543c6dc5300988f49545e73&auto=format&fit=crop&w=1650&q=80");
+    }
 
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }
